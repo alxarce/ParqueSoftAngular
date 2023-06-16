@@ -1,0 +1,10 @@
+<!-- Ajustado a Material 16.1 -->
+<mat-list>
+    <mat-list-item *ngFor="let item of characters.results"> 
+        <img matListItemAvatar [src]="item.image" alt="Character image">
+        <h3 matListItemTitle> {{item.name}} </h3>
+        <p matListItemLine>
+            Status: {{item.status}} - Specie: {{item.species}}
+        </p>
+    </mat-list-item>
+</mat-list>
